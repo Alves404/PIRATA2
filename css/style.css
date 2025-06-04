@@ -134,15 +134,13 @@ nav ul li {
     position: relative; /* Para o posicionamento do link "Sobre Nós" */
     padding-bottom: 60px; /* Espaço para o link "Sobre Nós" não ficar colado na borda */
 }
-
 .hero-content {
-    /* Se quiser adicionar texto sobre a imagem dos caminhões */
-    /* color: #fff; */
-    /* background-color: rgba(0, 0, 0, 0.5); */ /* Fundo semi-transparente para texto */
-    /* padding: 20px; */
-    /* border-radius: 5px; */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para texto */
+    padding: 20px;
+    border-radius: 5px;
 }
-
+    
 .scroll-down {
     color: #fff;
     font-size: 1.2em;
