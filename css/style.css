@@ -65,7 +65,9 @@ header {
 .logo span {
     font-size: 1.8em;
     font-weight: bold;
-    color: #fff;
+    color: #ff0000;
+    font-family: 'Times New Roman', Times, serif; 
+    font-style: italic; 
 }
 
 nav ul {
