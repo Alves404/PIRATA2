@@ -1,0 +1,230 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Escolha uma fonte que goste */
+    background-image: url('https://media.discordapp.net/attachments/1279227650921201665/1368031133962600509/20EA2D1.JPG?ex=6840edc7&is=683f9c47&hm=033c907e828c280572ffa40e2f0940be2ac152a68350aeaab53128b06370f73f&=&format=webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fundo fixo */
+    background-position: center;
+    
+    color: #f0f0f0; /* Cor de texto principal */
+    line-height: 1.6;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111; /* Cor de fundo escura para o cabeçalho */
+    /* Para usar uma imagem de fundo como na referência:
+    background-image: url('caminho/para/sua/imagem_fundo_header.jpg');
+    background-size: cover;
+    background-position: center;
+    */
+    padding: 15px 0;
+    border-bottom: 2px solid #c00; /* Linha vermelha como na imagem (pirata) */
+    position: sticky; /* Faz o cabeçalho ficar fixo no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajuste o tamanho do logo */
+    margin-right: 10px;
+    /* Remova o background se a imagem do logo tiver fundo transparente */
+    background-color: #fff; /* Apenas para placeholder */
+    border-radius: 5px; /* Apenas para placeholder */
+}
+
+.logo span {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #fff;
+    text-align: center;
+}
+
+.nav-button.inicio {
+    background-color: #c00; /* Vermelho para "Início" */
+    color: #fff;
+}
+
+.nav-button:not(.inicio) {
+     background-color: #333; /* Cinza escuro para outros botões */
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: #555;
+    color: #fff;
+}
+
+.nav-button.inicio:hover, .nav-button.inicio:focus {
+    background-color: #e00; /* Vermelho mais claro no hover */
+}
+
+.flag-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+    /* Remova o background se a imagem da bandeira tiver fundo transparente */
+    background-color: #fff; /* Apenas para placeholder */
+    border-radius: 2px; /* Apenas para placeholder */
+}
+
+/* Seção Hero (imagem principal dos caminhões) */
+.hero {
+    height: 80vh; /* Altura da seção - ajuste conforme necessário */
+    /* Substitua 'caminho/para/sua/imagem_caminhoes.jpg' pela imagem dos caminhões */
+    background-image: url('placeholder-trucks.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o link "Sobre Nós" para baixo */
+    align-items: center;
+    text-align: center;
+    position: relative; /* Para o posicionamento do link "Sobre Nós" */
+    padding-bottom: 60px; /* Espaço para o link "Sobre Nós" não ficar colado na borda */
+}
+
+.hero-content {
+    /* Se quiser adicionar texto sobre a imagem dos caminhões */
+    /* color: #fff; */
+    /* background-color: rgba(0, 0, 0, 0.5); */ /* Fundo semi-transparente para texto */
+    /* padding: 20px; */
+    /* border-radius: 5px; */
+}
+
+.scroll-down {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px; /* Distância da parte inferior da seção hero */
+    transition: background-color 0.3s ease;
+}
+
+.scroll-down:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-down i {
+    margin-left: 8px;
+    display: block; /* Faz o ícone ficar abaixo do texto */
+    margin-left: auto; /* Centraliza se estiver sozinho */
+    margin-right: auto; /* Centraliza se estiver sozinho */
+    margin-top: 5px;
+}
+
+
+/* Seção de Conteúdo (Ex: Sobre Nós) */
+.content-section {
+    padding: 60px 0;
+    background-color: #2a2a2a; /* Cor de fundo para seções de conteúdo */
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}
+
+/* Ajustes para telas menores (Mobile) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .nav-button {
+        display: block; /* Faz os botões ocuparem a largura toda */
+        width: calc(100% - 40px); /* Considera o padding */
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .scroll-down {
+        font-size: 1em;
+    }
+
+    .content-section h2 {
+        font-size: 2em;
+    }
+}
