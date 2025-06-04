@@ -74,6 +74,16 @@ header {
     font-style: italic; 
 }
 
+#bcima1:hover {
+    box-shadow: 5px 5px rgb(160, 170, 0);
+    border: rgb(200, 255, 0) 5px solid;
+    transform: translateY(2px) scale(0.97);
+    transition: 
+        box-shadow 0.35s cubic-bezier(.4,2,.6,1),
+        transform 0.28s cubic-bezier(.4,2,.6,1);
+    color: rgb(200, 255, 0);
+}
+
 #bcima2:hover {
     box-shadow: 5px 5px rgb(0, 158, 26);
     border: rgb(0, 255, 20) 5px solid;
@@ -84,16 +94,7 @@ header {
     color: rgb(0, 255, 20);
 
 }
-#bcima1:hover {
-    box-shadow: 5px 5px rgb(160, 170, 0);
-    border: rgb(200, 255, 0) 5px solid;
-    transform: translateY(2px) scale(0.97);
-    transition: 
-        box-shadow 0.35s cubic-bezier(.4,2,.6,1),
-        transform 0.28s cubic-bezier(.4,2,.6,1);
-    color: rgb(200, 255, 0);
 
-}
 nav ul {
     list-style: none;
     margin: 0;
