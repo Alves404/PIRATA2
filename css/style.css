@@ -30,17 +30,16 @@ img {
 
 /* Cabeçalho */
 header {
-    background-color: #111; /* Cor de fundo escura para o cabeçalho */
-    /* Para usar uma imagem de fundo como na referência:
-    background-image: url('caminho/para/sua/imagem_fundo_header.jpg');
+    background-color: #000000; 
+    background-image: url(../midia/banner_tmp_5.png) ; 
     background-size: cover;
     background-position: center;
-    */
     padding: 15px 0;
     border-bottom: 2px solid #c00; /* Linha vermelha como na imagem (pirata) */
     position: sticky; /* Faz o cabeçalho ficar fixo no topo ao rolar */
     top: 0;
     z-index: 1000; /* Garante que o header fique sobre outros elementos */
+
 }
 
 .header-container {
@@ -63,13 +62,38 @@ header {
 }
 
 .logo span {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background: rgba(0,0,0,0.3);
+    border-radius: 50px;
+    padding: 4px 12px;
     font-size: 1.8em;
     font-weight: bold;
-    color: #ff0000;
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif; 
     font-style: italic; 
 }
 
+#bcima2:hover {
+    box-shadow: 5px 5px rgb(0, 158, 26);
+    border: rgb(0, 255, 20) 5px solid;
+    transform: translateY(2px) scale(0.97);
+    transition: 
+        box-shadow 0.35s cubic-bezier(.4,2,.6,1),
+        transform 0.28s cubic-bezier(.4,2,.6,1);
+    color: rgb(0, 255, 20);
+
+}
+#bcima1:hover {
+    box-shadow: 5px 5px rgb(160, 170, 0);
+    border: rgb(200, 255, 0) 5px solid;
+    transform: translateY(2px) scale(0.97);
+    transition: 
+        box-shadow 0.35s cubic-bezier(.4,2,.6,1),
+        transform 0.28s cubic-bezier(.4,2,.6,1);
+    color: rgb(200, 255, 0);
+
+}
 nav ul {
     list-style: none;
     margin: 0;
@@ -82,9 +106,12 @@ nav ul li {
 }
 
 .nav-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
+    display: inline-block;;
+    margin-top: 20px; /* Espaçamento entre os botões */
+    margin-bottom: 10px;
+    margin-left: 0px; 
+    padding: 10px 10px;
+    border-radius: 50px;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     color: #fff;
